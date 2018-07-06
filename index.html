@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>No-three-in-line</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico"> 
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <h1>No-three-in-line</h1>
+
+    <p>The no-three-in-line problem asks for the maximum number of points that
+        can be placed in the <em>n</em> &times; <em>n</em> grid so that no three points are collinear.
+        This is a famous unsolved problem in discrete geometry.
+        How many points can you place in the grid?
+    </p>
+    <div id="input"><em>n</em> = <input name="N" value="6" type="number" size="3" max="20" min="3"></div>
+    <div id="grid"></div>
+    <div id="scoreboard">Score: <span id="score"></span>
+        <button id="restart">Restart</button></div>
+    <div id="reset"></div>
+
+    <div id="instructions">
+        <p>Instructions:</p>
+        <ul>
+            <li>Click on a dot to select it. The dot will turn red.</li>
+            <li>Clicking on a red dot unselects it.</li>
+            <li>Light grey dots cannot be selected because they would make three in a row.</li>
+            <li>Click on a light grey dot to see the three in a row.</li>
+            <li>Try to get a perfect score of <span id="top-score">20</span>.</li>
+        </ul>
+    </div>
+    <footer>
+        Created by David Radcliffe (dradcliffe@gmail.com)
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
